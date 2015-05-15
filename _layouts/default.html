@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>{{ site.baseurl }}{{ page.title }}</title>
+  <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width">
 
   <!--[if lt IE 9]>
@@ -20,8 +20,8 @@
 
 
   <header id="header">
-    <h1><a href="{{ site.baseurl }}/"><i class="icon-sun"></i> {{ site.baseurl }}{{ site.name }}</a></h1>
-    <p>{{ site.baseurl }}{{ site.description }}</p>
+    <h1><a href="{{ site.baseurl }}/"><i class="icon-sun"></i> {{ site.name }}</a></h1>
+    <p>{{ site.description }}</p>
   </header>
 
 
@@ -56,7 +56,7 @@
 
 
   <footer id="footer">
-    <p class="copyright">Copyright &copy Kacper Sokol; {{ site.baseurl }}{{ site.time | date: '%Y' }} {{ site.baseurl }}{{ site.name }}.</p>
+    <p class="copyright">Copyright &copy Kacper Sokol; {{ site.time | date: '%Y' }} {{ site.name }}.</p>
   </footer>
 
 
