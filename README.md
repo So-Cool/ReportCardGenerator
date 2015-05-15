@@ -15,10 +15,10 @@ categories: post categories <--! optional field -->
 external-url: http://ext.url/loc/ <--! in case the post redirects to external website -->
 ---
 
-# Content of the post #
+## Header #
 Body of the post.
 
-# Posts support advanced syntax colouring #
+## Posts support advanced syntax colouring ##
 
 {% highlight ruby %}
 def print_hi(name)
