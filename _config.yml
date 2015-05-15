@@ -10,4 +10,4 @@ paginate: 10
 highlighter: pygments
 paginate_path: "blog/posts/:num"
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'feed.xml']

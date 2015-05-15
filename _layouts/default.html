@@ -3,15 +3,15 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
+  <title>{{ site.baseurl }}{{ page.title }}</title>
   <meta name="viewport" content="width=device-width">
 
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <link href="/assets/css/style.css" rel="stylesheet" />
-  <link href="/assets/css/colors-dark.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" />
+  <link href="{{ site.baseurl }}/assets/css/colors-dark.css" rel="stylesheet" />
 
 </head>
 
@@ -20,8 +20,8 @@
 
 
   <header id="header">
-    <h1><a href="/"><i class="icon-sun"></i> {{ site.name }}</a></h1>
-    <p>{{ site.description }}</p>
+    <h1><a href="{{ site.baseurl }}/"><i class="icon-sun"></i> {{ site.baseurl }}{{ site.name }}</a></h1>
+    <p>{{ site.baseurl }}{{ site.description }}</p>
   </header>
 
 
@@ -33,12 +33,12 @@
     <div id="sidebar">
       <nav>
         <ul>
-          <li><a href="/">About</a></li>
-          <li><a href="/timeline">Timeline</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/archives">Archives</a></li>
+          <li><a href="{{ site.baseurl }}/">About</a></li>
+          <li><a href="{{ site.baseurl }}/timeline">Timeline</a></li>
+          <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+          <li><a href="{{ site.baseurl }}/archives">Archives</a></li>
           <!-- <li><a href="http://twitter.com/redwall_hp">Twitter</a></li> -->
-          <!-- <li><a href="/feed.xml">RSS Feed</a></li> -->
+          <!-- <li><a href="{{ site.baseurl }}/feed.xml">RSS Feed</a></li> -->
         </ul>
       </nav>
     </div>
@@ -46,7 +46,7 @@
 
 
     <div id="content">
-      {{ content }}
+      {{ site.baseurl }}{{ content }}
     </div>
 
 
@@ -56,13 +56,13 @@
 
 
   <footer id="footer">
-    <p class="copyright">Copyright &copy Kacper Sokol; {{ site.time | date: '%Y' }} {{ site.name }}.</p>
+    <p class="copyright">Copyright &copy Kacper Sokol; {{ site.baseurl }}{{ site.time | date: '%Y' }} {{ site.baseurl }}{{ site.name }}.</p>
   </footer>
 
 
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="/assets/js/jquery.mobilemenu.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/jquery.mobilemenu.min.js"></script>
 
   <script>
     $(document).ready(function(){
