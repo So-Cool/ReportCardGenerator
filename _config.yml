@@ -2,6 +2,9 @@ name: Report Card Generator
 url: https://so-cool.github.io/ReportCardGenerator
 description: A report card generator for robots' manipulation tasks
 
+baseurl: /ReportCardGenerator
+
+
 permalink: /:year/:month/:day/:title/
 paginate: 10
 highlighter: pygments
