@@ -1,0 +1,10 @@
+name: Report Card Generator
+url: https://so-cool.github.io/ReportCardGenerator
+description: A report card generator for robots' manipulation tasks
+
+permalink: /:year/:month/:day/:title/
+paginate: 10
+highlighter: pygment
+paginate_path: "blog/posts/:num"
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
