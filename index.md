@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Report Card Generator
 ---
 
 # Report Card Generation from Robot Mobile Manipulation Activities #
