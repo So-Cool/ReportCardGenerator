@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Current State"
+title:  "Current State"
 date:   2015-05-19 15:20:00
 categories: maintenance status
 ---
