@@ -32,7 +32,7 @@ mongoimport --db roslog --collection logged_designators < logged_designators.jso
 
 Now install the OpenEASE and KnowRob locally via [Docker][docker]. This should already contain a sample pick and place experiment; for importing new ones, you will need to rebuild the Docker containers [here][dockerDev].
 
-For forked GitHub repository the `dev` files are [here][gitdev] on the `indigo-devel` branch. `knowrob/docker` and `knowrob_web_tools`, both master branch, are also needed. All the rest is as described [here][devDescription].
+For forked GitHub repository the `dev` files are [here][gitdev] on the `indigo-devel` branch. `knowrob/docker` and [`knowrob_webtools`][webtools], both master branch, are also needed. All the rest is as described [here][devDescription].
 
 ---
 
@@ -47,5 +47,6 @@ For forked GitHub repository the `dev` files are [here][gitdev] on the `indigo-d
 [PnP]: http://www.robots-doing-things.com/incoming/log-packaged-2014-12-30-16-10-37.tar.gz
 [docker]: http://knowrob.org/doc/docker
 [dockerDev]: http://knowrob.org/doc/docker/dev
-[gitdev]: github.com/knowrob/knowrob
+[gitdev]: https://github.com/knowrob/knowrob
 [devDescription]: http://knowrob.org/doc/docker
+[webtools]: https://github.com/code-iai/knowrob_webtools
