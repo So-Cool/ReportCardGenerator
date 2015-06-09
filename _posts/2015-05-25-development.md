@@ -101,6 +101,33 @@ and load data in `Prolog`
 
 done.
 
+---
+
+To use `Real`: `R` interface in `Prolog` install `r-base`, `r-base-dev` and the newest version of SWI-Prolog (tested on 7.2.0) - the one shipped with Ubuntu is too old (6.4.0):
+{% highlight bash %}
+sudo add-apt-repository "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/“
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+sudo apt-get update
+
+sudo apt-get install r-base
+sudo apt-get install r-base-dev
+
+
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:swi-prolog/stable
+sudo apt-get update
+
+sudo apt-get install swi-prolog
+{% endhighlight %}
+run SWI-Prolog:
+{% highlight bash %}
+swipl
+{% endhighlight %}
+and inside `Prolog` install `Real`:
+{% highlight prolog %}
+?- pack_install( real ).
+{% endhighlight %}
+
 [ROSinstall]: http://wiki.ros.org/indigo/Installation/Ubuntu
 [rosjava]: http://wiki.ros.org/rosjava/Tutorials/indigo/Source%20Installation
 [catkin]: http://knowrob.org/installation/catkin
