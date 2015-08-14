@@ -16,7 +16,7 @@ Once the data is prepared part of it is passed to `R` via `real` interface where
 Then, links to prepared figures and log statistics are passed via JPL to `Java` where they are prepared and injected into selected LaTeX templates with use of *Nixo Soft* [JLR library][JLR].  
 Finally, the same library is used to generate a PDF based on prepared tex files. For details please refer to below figure.
 
-![`report_card` flow chart.](https://raw.githubusercontent.com/So-Cool/ReportCardGenerator/gh-pages/docs/flowChart.png "`report_card` flow chart")
+<img src="https://raw.githubusercontent.com/So-Cool/ReportCardGenerator/gh-pages/docs/flowChart.png" alt="`report_card` flow chart" width="400" style="background-color:#509EB2;">
 
 ## Report card generation paradigm ##
 To make the package the most universal the report card generation is based on two key concepts **report card layout templates** and **section templates**. This approach allows the user to choose the design of the report card and decide which sections should be placed within. Moreover, this design facilitates creating personalised section and including them in the report card without complex code alterations and rebuilding the whole package - see below.
