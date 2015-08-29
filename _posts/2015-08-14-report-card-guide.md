@@ -141,6 +141,29 @@ rc_temporary_directory(RcTempDir), create_directory(RcTempDir), prolog_to_os_fil
 
 Before generating a report card remember to load the data e.g. `load_experiment('/home/ros/datasets/ds4/cram_log.owl').`!
 
+## Using R commands within Prolog
+To perform statistical computations R is accessed via [real][real] interface in Prolog. As a rough guide please see the example shown below.
+
+Set two lists in Prolog and pass them to R;
+{% highlight Prolog %}
+A = [1, 2, 3, 4, 5, 6],
+B = ['a', 'b', 'c', 'd', 'e', 'f'],
+a <- A,
+b <- B,
+{% endhighlight %}
+calculate mean of the first list, memorise the result in R variable and pass it back to Prolog;
+{% highlight Prolog %}
+'a.mean' <- mean(a),
+Amean <- 'a.mean',
+write(Amean),
+{% endhighlight %}
+and finally, plot a pie-chart to PDF based on the list A with labels B.
+{% highlight Prolog %}
+<- pdf(file = +"./filename.pdf"),
+<- pie('a', labels = sprintf(+"%s of\n%s", 'a', 'b'), main = +"Pie-chart name"),
+<- invisible('dev.off()').
+{% endhighlight %}
+
 ## Package requirements and installation ##
 For details please refer to this [location][installation].
 
@@ -151,5 +174,6 @@ Please document all your code and wrap it between *%%%%section_name - author - <
 [JLR]: http://www.nixo-soft.de/tutorials/jlr/JLRTutorial.html
 [knowrob]: http://knowrob.org
 [openEASE]: http://www.open-ease.org
+[real]: http://www.swi-prolog.org/pack/file_details/real/prolog/real.pl
 [installation]: http://so-cool.github.io/ReportCardGenerator/2015/05/29/development/
 
